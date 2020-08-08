@@ -1,0 +1,12 @@
+tutorial: Docker + Kafka
+https://www.youtube.com/watch?v=WnlX7w4lHvM
+http://selftuts.com/kafaka-setup-using-docker-compose/
+
+touch docker-compose.yaml
+docker-compose -f docker-compose.yml up
+sudo docker exec -it kafka /bin/sh
+
+# run this command in /opt/kafka to create a topic
+./bin/kafka-topics.sh --create --zookeeper zookeeper:2181 --replication-factor 1 --partitions 1 --topic demo
+./bin/kafka-topics.sh --list --zookeeper zookeeper:2181
+	
