@@ -1,0 +1,23 @@
+import pytest
+
+
+def func(x):
+    return x + 1
+
+
+def test_answer():
+    assert func(4) == 5
+
+
+def f():
+    raise SystemExit(1)
+
+
+def test_mytest():
+    with pytest.raises(SystemExit):
+        f()
+
+
+def test_another_test():
+    assert 1 == 1
+    assert 'yes' == 'yes'
