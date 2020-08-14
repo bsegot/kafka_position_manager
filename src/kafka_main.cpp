@@ -49,8 +49,11 @@
  * Typical include path in a real application would be
  * #include <librdkafka/rdkafkacpp.h>
  */
-#include "rdkafkacpp.h"
+//#include </home/bsegot/projects/Data_Project/kafka_position_manager/librdkafka/src-cpp/rdkafkacpp.h>
 
+#include <librdkafka/rdkafkacpp.h>
+
+//#include "/home/bsegot/projects/Data_Project/kafka_position_manager/librdkafka/src/rdkafka.h"
 
 static volatile sig_atomic_t run = 1;
 
