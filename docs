@@ -22,3 +22,12 @@ sudo docker exec -it kafka /bin/sh
 # Kafka C++
 
 https://github.com/edenhill/librdkafka
+
+# how to install and run a hello world =>
+
+./configure --prefix=/usr
+make
+sudo make install
+
+add in the file: #include "/home/bsegot/projects/Data_Project/kafka_position_manager/librdkafka/src-cpp/rdkafkacpp.h"
+g++ /home/bsegot/projects/Data_Project/kafka_position_manager/src/producer.cpp -o /home/bsegot/projects/Data_Project/kafka_position_manager/src/producer_target -lrdkafka++ -lrdkafka++
